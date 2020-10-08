@@ -1,13 +1,4 @@
-/*
-    ASSIGNMENT RULES
-    - All the answers must be in JavaScript
-    - The solution must be pushed to the repository and be available for the tutors by the end of the day
-    - You can ask for tutor's help
-    - You can google / use StackOverflow BUT we suggest you to use just the material provided
-    - You can test your code in a separate file or commenting the single parts in this file or directly in the Developer Console or in the Node Console.
-    - Complete as many exercise that you can
-    - Publish them into your own GitHub account before 17.00 (Berlin Time)
-*/
+
 
 //JS Basics
 
