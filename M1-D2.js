@@ -1,11 +1,4 @@
-/*
-ASSIGNMENT RULES
-- All the answers must be in JavaScript
-- You can ask for tutor's help
-- The solution must be available for the tutors by the end of the day
-- You can google / use StackOverflow BUT we suggest you to use just the material provided
-- You can test your code in a separate file or commenting the single parts in this file or directly in the Developer Console or in the Node Console.
-*/
+
 
 /* EXERCISE 1
 Write the code to execute a SUM between the number 12 and 20
@@ -59,6 +52,4 @@ Insert a value in a variable based on the result of a ternary if
 
 
 
-/* WHEN YOU ARE FINISHED
-Send the code via Slack to the tutor! In the next days we'll also learn how to use GIT 
-*/
+
