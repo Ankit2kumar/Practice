@@ -1,10 +1,4 @@
-/*
-ASSIGNMENT RULES
-- All the answers must be in JavaScript
-- You can google / use StackOverflow BUT we suggest you to use just the material provided
-- You can ask for tutor's help
-- You can test your code in a separate file or commenting the single parts in this file or directly in the Developer Console or in the Node Console.
-*/
+
 
 /* EXERCISE 1
 Create and array with the first 5 positive numbers
@@ -157,6 +151,3 @@ Print in the console the data from each car in the carsForSale array
 
 /* WRITE YOUR CODE HERE */
 
-/* WHEN YOU ARE FINISHED
-Send the code on Discord via a message to your tutor! In the next days we'll also learn how to use GIT 
-*/
