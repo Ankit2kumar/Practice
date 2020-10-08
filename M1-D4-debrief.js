@@ -1,10 +1,4 @@
-/*
-ASSIGNMENT RULES
-- All the answers must be in JavaScript
-- The solution must be pushed to the repository and be available for the tutors by the end of the day
-- You can ask for tutor's help
-- You can google / use StackOverflow BUT we suggest you to use just the material provided
-*/
+
 
 /* EXERCISE 1
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
@@ -184,6 +178,4 @@ console.log(giveMeRandom(8));
 
 /* WRITE YOUR CODE HERE */
 
-/* WHEN YOU ARE FINISHED
-Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
-*/
+
