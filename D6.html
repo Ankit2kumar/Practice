@@ -1,0 +1,119 @@
+<html>
+	<!--
+        You have been assigned to the creation of a Smartphone Shop Website.
+        The shop is just a showcase of the products of the shop with some extra informations.
+        No shopping cart / checkout features are required.
+        EX1.:
+        Add H1 title with the name of the shop
+        EX2.: 
+        Add a TABLE with the top 5 products of the shop
+        EX3.: 
+        Each product should have one image, title, description and price
+        EX4.:
+        Add Map to the shop 
+        EX5.: 
+        Add the links to Amazon products for each item in the table
+        EX6.:
+        Add a footer with the address and the name of the shop
+        EX7.: 
+        Add a message board where the user can type a message in it (only client side)
+        // EXTRA 
+        EX8.: 
+        Write a function to change the heading text
+        EX9.:
+        Write a function to change the page background color
+        EX10.:
+        Write a function to change the footer address with a fake one
+    -->
+
+	<head>
+		<title>Smartphone Shop Website</title>
+	</head>
+
+	<body>
+		<table style="width: 100%">
+			<tr>
+				<th>Image</th>
+				<th>price</th>
+				<th>Title</th>
+				<th>Description</th>
+			</tr>
+			<h1>Hello There!!</h1>
+			<tr>
+				<td>
+					<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+				</td>
+				<td>500€</td>
+				<td>
+					<a
+						href="https://www.amazon.de/-/en/Apple-iPhone-11-Pro-64GB/dp/B07XRRNYW"
+						target="_blank"
+					>
+						Iphone 11 Pro</a
+					>
+				</td>
+				<td>hudfgbufghydfughdaighuadgaudiga</td>
+			</tr>
+
+			<tr>
+				<td>
+					<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+				</td>
+				<td>500€</td>
+				<td>Iphone 11 Pro</td>
+				<td>hudfgbufghydfughdaighuadgaudiga</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+				</td>
+				<td>500€</td>
+				<td>Iphone 11 Pro</td>
+				<td>hudfgbufghydfughdaighuadgaudiga</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+				</td>
+				<td>500€</td>
+				<td>Mac Book air</td>
+				<td>hudfgbufghydfughdaighuadgaudiga</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+				</td>
+				<td>500€</td>
+				<td>Iphone 11 Pro</td>
+				<td>hudfgbufghydfughdaighuadgaudiga</td>
+			</tr>
+		</table>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80837.29435479436!2d10.334500004089533!3d50.71686967011884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a3782f76da373f%3A0xfbe48add53b3bdea!2sSchmalkalden!5e0!3m2!1sen!2sde!4v1601988799715!5m2!1sen!2sde"
+			width="600"
+			height="450"
+			frameborder="0"
+			style="border: 0"
+			allowfullscreen=""
+			aria-hidden="false"
+			tabindex="0"
+		></iframe>
+		<textarea name=" " id="" cols="30" rows="10"></textarea>
+		<footer>
+			VIP Shop
+			<address>Neu Delhi,Sarojini Nagar</address>
+		</footer>
+	</body>
+
+	<script>
+		const change = function () {
+			document.body.style.backgroundColor = 'cyan';
+			let title = document.getElementsByTagName('h1')[0];
+			title.innerText = 'Content Changed';
+		};
+		const change2 = function () {
+			let foot = document.getElementsByTagName('footer')[0];
+			foot.innerText = 'Address :- Hellostraße00, PLZ=8739764';
+		};
+	</script>
+</html>
