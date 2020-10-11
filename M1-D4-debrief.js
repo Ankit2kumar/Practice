@@ -55,15 +55,15 @@ Write a function "boundary" which accept an integer N and returns true if N is w
 */
 
 function boundary(N) {
-  // if(N > 20 && N <= 100) {
-  //     return true
-  // }
-  // if(N === 400) {
-  //     return true
-  // }
-  //   else {
-  //     return false;
-  //   }
+   if(N > 20 && N <= 100) {
+       return true
+   }
+  if(N === 400) {
+     return true
+   }
+    else {
+      return false;
+   }
 
   if ((N > 20 && N <= 100) || N === 400) {
     return true;
@@ -97,13 +97,13 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-// function check3and7(num) {
-//   if (num % 3 === 0 || num % 7 === 0) {
-//     console.log("It's a multiple of 3 or 7!");
-//   } else {
-//     console.log("It's NOT a multiple of 3 or 7!");
-//   }
-// }
+ function check3and7(num) {
+   if (num % 3 === 0 || num % 7 === 0) {
+    console.log("It's a multiple of 3 or 7!");
+   } else {
+     console.log("It's NOT a multiple of 3 or 7!");
+  }
+ }
 
 function check3and7(num) {
   // if (num % 3 === 0 || num % 7 === 0) {
