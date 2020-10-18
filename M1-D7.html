@@ -1,0 +1,280 @@
+<!-- Starting from D6's exercise, use your Smartphone Shop Website and implement the following exercises-->
+<head>
+	<title>Smartphone Shop Website</title>
+	<style>
+		.red-color {
+			background-color: red;
+		}
+		body {
+			font-family: 'Poppins', sans-serif;
+			background-color: #17a2b8;
+			color: #f8f9fa;
+		}
+	</style>
+</head>
+
+<body>
+	<table style="width: 100%" id="table1">
+		<tr>
+			<th>Image</th>
+			<th>price</th>
+			<th>Title</th>
+			<th>Description</th>
+		</tr>
+		<h1>Hello There!!</h1>
+		<h2 id="listTitle">Todo List</h2>
+		<ul id="firstList">
+			<li><p>1st</p></li>
+			<li>2nd</li>
+			<li>3rd</li>
+		</ul>
+		<ul id="secondList">
+			<li>1st</li>
+			<li>2nd</li>
+			<li>3rd</li>
+		</ul>
+		<div>
+			<p>This text is just for the exercise</p>
+		</div>
+		<tr>
+			<td>
+				<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+			</td>
+			<td>500€</td>
+			<td>
+				<a
+					href="https://www.amazon.de/-/en/Apple-iPhone-11-Pro-64GB/dp/B07XRRNYW"
+					target="_blank"
+				>
+					Iphone 11 Pro</a
+				>
+			</td>
+			<td>hudfgbufghydfughdaighuadgaudiga</td>
+		</tr>
+
+		<tr>
+			<td>
+				<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+			</td>
+			<td>500€</td>
+			<td>Iphone 11 Pro</td>
+			<td>hudfgbufghydfughdaighuadgaudiga</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+			</td>
+			<td>500€</td>
+			<td>Iphone 11 Pro</td>
+			<td>hudfgbufghydfughdaighuadgaudiga</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+			</td>
+			<td>500€</td>
+			<td>Mac Book air</td>
+			<td>hudfgbufghydfughdaighuadgaudiga</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="iphone 11pro.jpg" width="250px" alt="A cell Phone" />
+			</td>
+			<td>500€</td>
+			<td>Iphone 11 Pro</td>
+			<td>hudfgbufghydfughdaighuadgaudiga</td>
+		</tr>
+	</table>
+	<input type="text" id="box" />
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80837.29435479436!2d10.334500004089533!3d50.71686967011884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a3782f76da373f%3A0xfbe48add53b3bdea!2sSchmalkalden!5e0!3m2!1sen!2sde!4v1601988799715!5m2!1sen!2sde"
+		width="600"
+		height="450"
+		frameborder="0"
+		style="border: 0"
+		allowfullscreen=""
+		aria-hidden="false"
+		tabindex="0"
+	></iframe>
+
+	<footer>
+		VIP Shop
+		<address>Neu Delhi,Sarojini Nagar</address>
+	</footer>
+
+	<script>
+		/*EXERCISE 1
+			     Create a new welcome alert message when the page successfully loads
+			    */
+
+		/* EXERCISE 2
+			      Write a function to change the Title of the page in something else (execute the function in browser console)
+			  */
+
+		//window.onload = function (){
+		//document.title = "Let's see!!";
+		//console.log(document.title);
+		//};
+		/* EXERCISE 3a
+			      Write a function to add a class to the page's h1 title in "red-color" (execute the function when title is hovered by mouse).
+			  */
+		function addClass() {
+			let myh1 = document.getElementsByTagName('h1')[0];
+			myh1.classList.add('red-color');
+			//  let h1 = document.querySelector("h1")
+			//  h1.classList.add("red-color")
+		}
+
+		/* EXERCISE 3b
+			      Write a function to remove "red-color" class from previous h1 (execute the function when the mouse leaves the title).
+			  */
+		function removeClass() {
+			document.querySelector('h1').classList.remove('red-color');
+		}
+
+		/* EXERCISE 4
+			      Add the following html snippet to your page:
+			          <h2 id="listTitle">Todo List</h2>
+			          <ul id="firstList">
+			              <li><p>1st</p></li>
+			              <li>2nd</li>
+			              <li>3rd</li>
+			          </ul>
+			          <ul id="secondList">
+			              <li>1st</li>
+			              <li>2nd</li>
+			              <li>3rd</li>
+			          </ul>
+			          <div>
+			              <p>This text is just for the exercise</p>
+			          </div>
+			  Write a function to change the text of only the p which are child of a div (execute the function by assigning it to a button's click event)
+			  */
+
+		let btn = document.createElement('Button');
+		document.body.appendChild(btn);
+		btn.onclick = function () {
+			let myP = document.querySelector('div p');
+			myP.innerText = 'Test!';
+		};
+		/* EXERCISE 5
+			      Write a function to change the list title (you can use previous day's textarea as input or create a new text input field to grab the content)
+			  */
+		const changeListTitle = function () {
+			let txt = document.querySelector('#listTitle');
+			txt.innerText = document.querySelector('#box').value;
+		};
+
+		/* EXERCISE 6
+			       Write a function to add a new item ONLY to the second list (create an input field + add button)
+			  */
+		let inputField = document.createElement('input');
+		inputField.type = 'text';
+		inputField.id = 'box1';
+		document.body.appendChild(inputField);
+		let btn1 = document.createElement('Button');
+		btn1.innerText = 'Click to push item in the list';
+		document.body.appendChild(btn1);
+		const addToTheSecond = function () {
+			let newElement = document.createElement('LI');
+			let value1 = document.querySelector('#box1').value;
+			let tn = document.createTextNode(value1);
+			newElement.appendChild(tn); //appending text node to the new list item
+			let secondList1 = document.querySelector('#secondList');
+			secondList1.appendChild(newElement);
+		};
+		btn1.onclick = function () {
+			addToTheSecond();
+		};
+
+		/* EXERCISE 7
+			      Write a function to make the first UL disappear (button)
+			  */
+		//const firstUlDisappear = function () {
+		let btn3 = document.createElement('Button');
+		btn3.innerText = 'Click to make first ul disappear';
+		document.body.appendChild(btn3);
+		btn3.onclick = function () {
+			document.querySelector('#firstList').style.display = 'none';
+		};
+		/* EXERCISE 8
+			      Write a function to make the background of every UL green (button)
+			  */
+		//	const paintItGreen = function () {
+		let btn4 = document.createElement('Button');
+		btn4.innerText = 'Click to make every UL green';
+		document.body.appendChild(btn4);
+		btn4.onclick = function () {};
+
+		/* EXERCISE 9
+			      Add a "magnifier function" to the table.
+			      When the user mouse goes on a table cell (not the image one) the font size must increase.
+			      HINT use mouseenter / mouseleave events
+			  */
+		//const makeThemMagnifiable = function () {};
+		let magnifier = document.querySelectorAll('td');
+		/* EXERCISE 10
+			      Add a button to toggle all the product images (toggle => if visible, hide, if not visible, show)
+			  */
+		const toggleShowImages = function () {};
+
+		//##### EXTRA
+
+		/* EXERCISE 11
+			      Make the heading of the page change color radomly every time the user clicks on it
+			      */
+		const makeItClickable = function () {};
+
+		/*EXERCISE 12
+			    Refactor your HTML code with HTML5 semantic tags such as header, section, footer, etc
+			*/
+	</script>
+
+	<script>
+		const change = function () {
+			document.body.style.backgroundColor = 'cyan';
+			let title = document.getElementsByTagName('h1')[0];
+			title.innerText = 'Content Changed';
+		};
+		const change2 = function () {
+			let foot = document.getElementsByTagName('footer')[0];
+			foot.innerText = 'Address :- Hellostraße00, PLZ=8739764';
+		};
+		const removeClassFromTitle = function () {
+			let remove = document.getElementsByTagName('h1')[0];
+			remove.onmouseleave = function () {
+				remove.style.backgroundColor = 'black';
+			};
+		};
+		window.onload = function () {
+			alert('You are welcome here!!');
+
+			const changeTitle = function () {
+				document.title = "LET'S SEE";
+				console.log(document.title);
+			};
+			//const addClassToTitle = function () {
+			let first = document.getElementsByTagName('h1')[0];
+			document.querySelector('#id1');
+			console.log('FIRST: ', first);
+			first.onmouseover = function () {
+				//first.style.backgroundColor = 'red';
+				console.log('HOVER');
+				addClass();
+			};
+			// first.classList.add('h1class');
+			//};
+
+			//addClassToTitle()
+
+			//const removeClassFromTitle = function () {
+			//let remove = document.getElementsByTagName('h1')[0];
+			first.onmouseleave = function () {
+				// remove.style.backgroundColor = 'black';
+				removeClass();
+			};
+
+			//};
+		};
+	</script>
+</body>
