@@ -1,4 +1,5 @@
 /*
+
 1)
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
@@ -194,27 +195,78 @@ const greatest = function(arrInt){
     let greatest = 0;
 for(let i=0; i<arrInt.length; i++){
  if(arrInt[i]> greatest){
-     r
+     greatest = arrInt[i]
  }
 }
 return greatest
 }
 
 console.log(greatest([1,2,3,4,5,6,7,1,2,10,100,1,1,1,0]))
-/*
 
+/*
 14)
 
 Create a function to get the largest even number from an array of integers.
+*/
+
+const maxEven = function(arra) {
+    let evenArr = [];
+ for (let i = 0; i < arra.length; i++) {
+      if (arra[i] % 2 == 0)
+        evenArr.push(arra[i])
+      }
+      let greatest = 0;
+for(let j=0; j<evenArr.length; j++){
+ if(evenArr[j]> greatest){
+     greatest = evenArr[j]
+ }
+}
+return greatest
+
+    }
+  
+  console.log(maxEven([1,3,4,5,6,7,9,10,1,20]))
+
+/*
+
 
 16)
 
 Create a function to check from two given integers, whether one is positive and another one is negative.
 
+*/
+
+const checkPosNeg = function(n1,n2){
+    if (n1<0)
+    console.log(n1 + " is negative.")
+    else
+    console.log(n1 + " is positive")
+    if (n2<0)
+    console.log(n2 + " is negative.")
+    else
+    console.log(n2 + " is positive")
+}
+
+checkPosNeg(-1, 1)
+
+
+/*
+
 17)
 
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
-
+*/ 
+const createString = function(){
+    let str = "aa";
+    if (str.length< 3) {
+   let newStr = str.toUpperCase
+    return newStr
+} else{
+    console.log("Strng length> 3")
+}
+}
+console.log(createString())
+/*
 18)
 
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
