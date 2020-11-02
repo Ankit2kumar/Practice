@@ -320,8 +320,25 @@ for (let i=1; i<= num; i++){
 }
 }
 numToStr(30);
+
+
 /*
 20)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 
 */
+const acronym = function(shor){
+   if(shor === "BBC"){
+       console.log("British Broadcasting Corporation")
+   }
+   if(shor === "WWW"){
+    console.log("World Wide Web")
+}
+if(shor === "HTML"){
+    console.log("Hyper Text Markup Language")
+}
+if(shor === "HTTP"){
+    console.log("Hyper Text Transfer Protocol")
+}
+}
+acronym("WWW")
