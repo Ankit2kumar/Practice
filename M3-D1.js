@@ -266,10 +266,22 @@ const createString = function(){
 }
 }
 console.log(createString())
+
 /*
 18)
 
-Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80. */
+
+const sumCheck = function(num1, num2){
+        let sum = num1 + num2 
+        if(sum<= 80 && sum>= 50)
+        return 65
+        else
+        return 80
+}
+console.log(sumCheck(40, 100))
+
+/*
 
 19)
 
@@ -286,7 +298,29 @@ this would be a simple "Stefano".
 this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34".
-
+*/
+const numToStr = function(num){
+for (let i=1; i<= num; i++){
+    if(num % i ===0){
+        let factor = i
+        if(factor === 3){
+            console.log("Diego")
+        } if (factor ===5){
+            console.log("Riccardo")
+        } if(factor ===7){
+            console.log("Stefano")
+        }
+        if(factor != 3 && factor != 5 && factor != 7){
+            console.log (factor)
+        }
+    }
+    else{
+        continue
+    }
+}
+}
+numToStr(30);
+/*
 20)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 
